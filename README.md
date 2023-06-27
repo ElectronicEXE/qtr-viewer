@@ -4,6 +4,7 @@ Python program to read data from pololu qtr and qtrx sensors and display the rea
 This program is very usefull when building a line follower robot or if you want to test diferent sensors.
 
 the program is configurated to read from the QTR-MD-8A but tis can be changed in the codes.
+The default COM port is 21.
 
 Requiered python libraries:
 -pygame
