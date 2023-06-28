@@ -29,7 +29,7 @@ def draw_text(DISPLAY, ready, c1l, c2l, c3l, c4l, c5l, c6l, c7l, c8l, pos):
         if ready ==True:
             text = font.render("                   position:  " + str(pos) + "                    ", True, white,BLACK)
         else:
-            text = font.render("calibratione is still in progress ...", True, white,BLACK)
+            text = font.render("calibration is still in progress ...", True, white,BLACK)
 
         textRect = text.get_rect()
         textRect.center = (285 , 130 )
