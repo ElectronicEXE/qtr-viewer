@@ -13,8 +13,6 @@ Requiered python libraries:
 Requiered arduino libraries:
 - QTRSensors
 
-pre-compiled installer and portable at:   https://mega.nz/folder/cjADDbSZ#2GTn-ggu-Dx3QHU3YOZKjA
-
 My youtube channel:    https://www.youtube.com/channel/UCeQ3mUyi1HQIFcvTO_wH8UA
 
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/53681632-d6fb-4c05-aefc-bf8fb5227e28)
