@@ -63,7 +63,7 @@ def serGet(ser):
         ready = True
     except:
         print("not ready")
-        print("calibratione is still in progress .....................")
+        print("calibration is still in progress .....................")
         ready = False
 
 def translate(value, leftMin, leftMax, rightMin, rightMax):
