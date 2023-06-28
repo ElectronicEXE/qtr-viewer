@@ -20,5 +20,4 @@ My youtube channel:    https://www.youtube.com/channel/UCeQ3mUyi1HQIFcvTO_wH8UA
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/53681632-d6fb-4c05-aefc-bf8fb5227e28)
 
 
-![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/c40d9780-9828-4b26-8d89-32b983f3605b)
 
