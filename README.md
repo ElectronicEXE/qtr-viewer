@@ -17,4 +17,5 @@ pre-compiled installer and portable at:   https://mega.nz/folder/cjADDbSZ#2GTn-g
 
 My youtube channel:    https://www.youtube.com/channel/UCeQ3mUyi1HQIFcvTO_wH8UA
 
-![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/756a2452-9616-4396-ba45-058a8cec8164)
+![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/53681632-d6fb-4c05-aefc-bf8fb5227e28)
+
