@@ -21,7 +21,7 @@ void setup()
   }
   digitalWrite(LED_BUILTIN, LOW); 
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   
 }
 
@@ -29,21 +29,10 @@ void loop()
 {
   uint16_t position = qtr.readLineBlack(sensorValues);
 
-  Serial.print(sensorValues[0]);
-  Serial.print(",");
-  Serial.print(sensorValues[1]);
-  Serial.print(",");
-  Serial.print(sensorValues[2]);
-  Serial.print(",");
-  Serial.print(sensorValues[3]);
-  Serial.print(",");
-  Serial.print(sensorValues[4]);
-  Serial.print(",");
-  Serial.print(sensorValues[5]);
-  Serial.print(",");
-  Serial.print(sensorValues[6]);
-  Serial.print(",");
-  Serial.print(sensorValues[7]);
-  Serial.print(",");
+ for (uint8_t i = 0; i < SensorCount; i++)
+  {
+    Serial.print(sensorValues[i]);
+    Serial.print(',');
+  }
   Serial.println(position);
 }
