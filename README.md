@@ -3,8 +3,13 @@ Python program to read data from pololu qtr and qtrx sensors and display the rea
 
 This program is very useful when building a line follower robot or testing different sensors.
 
-The program is configurated to read from the QTR-MD-8A but this can be changed in the codes.
-The default COM port is 21.
+By default, the program is configurated to read from the QTR-MD-8A at 115200 baud rate on COM21 but this can be changed in the code.
+
+The program works with up to 32 sensors.
+
+To change the baud rate, serial port, and sensor count edit lines 8, 10, and 12
+![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/0d131d03-4ca8-4419-9738-162bec91f5d2)
+
 
 Requiered python libraries:
 - pygame
@@ -12,8 +17,6 @@ Requiered python libraries:
 
 Requiered arduino libraries:
 - QTRSensors
-
-My youtube channel:    https://www.youtube.com/channel/UCeQ3mUyi1HQIFcvTO_wH8UA
 
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/53681632-d6fb-4c05-aefc-bf8fb5227e28)
 
