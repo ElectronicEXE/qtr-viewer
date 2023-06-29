@@ -25,6 +25,8 @@ Then open QTR-viewer and the calibration will start immediately. Once the sensor
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/449063ba-32df-4090-8e3c-339d7c318e9f)
 
 
+![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/e9f68d98-a088-480c-b552-74379aa19970)
+
 
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/611b3443-d27f-44df-9795-c8147be4529e)
 
