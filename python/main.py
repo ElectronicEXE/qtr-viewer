@@ -103,7 +103,7 @@ def draw_text(DISPLAY, ready, cLlist, pos,x,S_no):
         w = 40
         for i in range (S_no):
             
-            text1 = font2.render("  " + str(cLlist[i]) + "  ", True, white,BLACK)
+            text1 = font2.render("   " + str(cLlist[i]) + "   ", True, white,BLACK)
             textRect1 = text1.get_rect()
             textRect1.center = (w ,100 )
             DISPLAY.blit(text1,textRect1)
