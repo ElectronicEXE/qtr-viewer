@@ -2,7 +2,7 @@ import pygame, sys
 from pygame.locals import *
 import serial
 
-# VERSION = 1.7
+
 
 #################################################
 Sensor_Count = 8
@@ -15,24 +15,23 @@ baud_rate = 115200
 
 ser = serial.Serial(serial_port, baud_rate, timeout=1)
 
-ready = False
-
 clist =[100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100]
 cLlist =[100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100]
 
+ready = False
 pos = 0
-
-
+posMax = (Sensor_Count -1)*1000
 x = Sensor_Count * 71
-if x < 300:
-    x = 500
-y = 150
+if x < 356:
+    x = 450
+y = 170
 
 def main():
     pygame_init(x,y)
  
     while True:
-
+        if Sensor_Count != 1:
+            draw_positions()
         serGet(ser)
         draw_text(DISPLAY, ready,cLlist, pos,x,Sensor_Count)
         draw_box(DISPLAY,clist, Sensor_Count)
@@ -98,7 +97,7 @@ def draw_text(DISPLAY, ready, cLlist, pos,x,S_no):
             text = font.render("calibration is still in progress ...", True, white,BLACK)
 
         textRect = text.get_rect()
-        textRect.center = (x/2 , 130 )
+        textRect.center = (x/2 , 150 )
         i = 0
         w = 40
         for i in range (S_no):
@@ -114,6 +113,23 @@ def draw_text(DISPLAY, ready, cLlist, pos,x,S_no):
         DISPLAY.blit(text,textRect)
 
 
+def draw_positions():
+    color = 255,255,255
+    if posMax/2 -100 < int(pos) <posMax/2 +100:
+        color = 255,0,0
+    else:
+        color = 255,255,255
+    position2 = int(translate(int(pos), 0, posMax,-10,(Sensor_Count*71 - 70)))
+   
+    xx =30 + position2
+    yy =50 + position2
+    zz =40 + position2
+    pygame.draw.rect(DISPLAY,(50,50,50),(10,115,Sensor_Count*71 - 20,10))
+    pygame.draw.rect(DISPLAY,(30,30,50),(10,110,Sensor_Count*71 - 20,10))
+    pygame.draw.polygon(DISPLAY, (color), ((xx,120),(yy,120),(zz,110)))
+    
+    pygame.display.update()   
+    
 
 def pygame_init(x,y):
     pygame.init()
