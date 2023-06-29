@@ -24,4 +24,7 @@ Requiered arduino libraries:
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/611b3443-d27f-44df-9795-c8147be4529e)
 
 
+![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/c806fc74-77b0-4f19-a156-8aa5caa83507)
+
+
 
