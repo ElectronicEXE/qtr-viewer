@@ -20,6 +20,8 @@ Required Arduino libraries:
 
 To use the program you need to connect the array of sensors to an Arduino board and upload the Arduino code on it.
 Then open QTR-viewer and the calibration will start immediately. Once the sensors are calibrated you can start viewing the sensor data.
+
+
 ![image](https://github.com/ElectronicEXE/qtr-viewer/assets/114730703/53681632-d6fb-4c05-aefc-bf8fb5227e28)
 
 
